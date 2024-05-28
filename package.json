@@ -1,0 +1,29 @@
+{
+  "name": "crypto-address-parser",
+  "version": "0.1.0",
+  "description": "crypto-address-parser for address parsing",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivapendem/crypto-address-parser.git"
+  },
+  "keywords": [
+    "crypto-address-parser",
+    "crypto-address",
+    "crypto address",
+    "crypto address parser",
+    "shivapendem"
+  ],
+  "author": "shivapendem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivapendem/crypto-address-parser/issues"
+  },
+  "homepage": "https://github.com/shivapendem/crypto-address-parser#readme"
+}

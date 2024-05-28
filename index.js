@@ -24,8 +24,8 @@ function parseaddress(inputString) {
 	{
 		if(addr.indexOf(":")>0)
 		{
-			data.address=addr.split(":")[0];
-			data.chain=addr.split(":")[1];
+			data.address=addr.split(":")[1];
+			data.chain=addr.split(":")[0];
 		}
 		else
 		{

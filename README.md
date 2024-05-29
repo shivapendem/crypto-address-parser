@@ -11,10 +11,16 @@ Let's see about js code:
     let cpr = require('crypto-address-parser');
     
     let _addressinfo=cpr.parseaddress("ethereum:0xe8312ec868303fc3f14DeA8C63A1013608038801@0x39?amount=0.003985&contract=0x");
-    console.log(_addressinfo);
 
-    ```
+    console.log(_addressinfo); // returns as follows
+    {
+      params: { amount: '0.003985', contract: '0x' },
+      address: '0xe8312ec868303fc3f14DeA8C63A1013608038801',
+      chain: 'ethereum',
+      network: '0x39'
+    }
 
+```
 
 # Support
 

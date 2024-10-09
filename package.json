@@ -1,7 +1,7 @@
 {
   "name": "crypto-address-parser",
-  "version": "0.1.1",
-  "description": "crypto-address-parser for address parsing",
+  "version": "0.1.2",
+  "description": "crypto-address-parser for crypto address parsing with multi chains",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,9 @@
     "crypto-address",
     "crypto address",
     "crypto address parser",
-    "shivapendem"
+    "shivapendem",
+    "generate Crypto Address Url",
+    "generate Crypto Address"
   ],
   "author": "shivapendem",
   "license": "ISC",

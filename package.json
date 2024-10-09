@@ -1,6 +1,6 @@
 {
   "name": "crypto-address-parser",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "crypto-address-parser for crypto address parsing with multi chains",
   "main": "index.js",
   "directories": {
@@ -20,7 +20,7 @@
     "crypto address parser",
     "shivapendem",
     "generate Crypto Address Url",
-    "generate Crypto Address"
+    "generate Crypto Address","aeternity","algorand","aptos","arbitrum","aurora","avalanche-c","avaxc","base","binance","binance smart chain","bitcoin","bitcoin cash","bch","bnb","bsc","cardano","cosmos","cronos","cro","crypto.org","dash","decred","doge","eos","ethereum","ethereum classic","etc","ever","fantom","filecoin","fio","ftm","gnosis","gochain","groestlcoin","harmony","hedera","icp","icon","internet computer","iotex","kusama","kcc","linea","litecoin","mantle","matic","multiversx","nano","near","neo","nebulas","nervos","oasis network","ontology","op mainnet","opbnb","opbnb mainnet","polygon","pol","polkadot","qtum","ripple","ronin","rune","solana","stellar","sui","tezos","terra","terra classic","the open network","theta","thorchain","ton","tron","trx","vechain","vet","waves","xlm","xrp","zcash","zec","zilliqa"
   ],
   "author": "shivapendem",
   "license": "ISC",

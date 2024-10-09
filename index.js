@@ -59,9 +59,6 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 		if (contractaddress) {
 			addrparams['contract'] = contractaddress;
 		}
-		if (refid) {
-			addrparams['refid'] = refid;
-		}
 		return `${urlPrefix}:${address}${!isEmptyOrNull(chainid) ? "@0x" + (Number(chainid)).toString(16) : ""}`;
 	};
 	switch (network.tolowercase().trim()) {
@@ -167,9 +164,6 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 		case 'kcc':
 			url = addContractParam('kcc', 321);
 			break;
-
-
-
 		case 'crypto.org':
 		case 'cryptoorg':
 		case 'cro':
@@ -181,7 +175,7 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 			url = `internet_computer:${address}`;
 			break;
 		case 'doge':
-			url = addContractParam('doge');
+			url = `doge:${address}`;
 			break;
 		case 'ripple':
 		case 'xrp':
@@ -354,6 +348,9 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 	// Add amount parameter if provided
 	if (amount) {
 		addrparams['amount'] = amount;
+	}
+	if (refid) {
+		addrparams['refid'] = refid;
 	}
 	return url + '?' + new URLSearchParams(addrparams).toString();
 }

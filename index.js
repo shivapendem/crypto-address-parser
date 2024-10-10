@@ -61,7 +61,7 @@ function generateCryptoAddressUrl(network, address, amount=null, contractaddress
 		}
 		return `${urlPrefix}:${address}${!isEmptyOrNull(chainid) ? "@0x" + (Number(chainid)).toString(16) : ""}`;
 	};
-	switch (network.toLowerCase().trim()) {
+	switch (network.toString().toLowerCase().trim()) {
 		case 'bitcoin':
 		case 'btc':
 			url = `bitcoin:${address}`;

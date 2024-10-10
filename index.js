@@ -51,7 +51,7 @@ function isNull(data) {
 	return false;
 }
 
-function generateCryptoAddressUrl(network, address, amount, contractaddress = null, refid = null) {
+function generateCryptoAddressUrl(network, address, amount=null, contractaddress = null, refid = null) {
 	let url = '';
 	let addrparams = {};
 	// Common handling for contract addresses
@@ -61,7 +61,7 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 		}
 		return `${urlPrefix}:${address}${!isEmptyOrNull(chainid) ? "@0x" + (Number(chainid)).toString(16) : ""}`;
 	};
-	switch (network.tolowercase().trim()) {
+	switch (network.toLowerCase().trim()) {
 		case 'bitcoin':
 		case 'btc':
 			url = `bitcoin:${address}`;

@@ -342,7 +342,7 @@ function generateCryptoAddressUrl(network, address, amount, contractaddress = nu
 			url = `sui:${address}`;
 			break;
 		default:
-			throw new Error(`Unsupported network: ${network}`);
+			url = `${address}`;
 	}
 
 	// Add amount parameter if provided

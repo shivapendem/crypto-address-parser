@@ -37,7 +37,7 @@ function isEmptyOrNull(data) {
 };
 function isEmpty(string) {
 	if (isNull(string)) return true;
-	else if ((typeof string) == "object") { return isObjectEmpty(string); }
+	else if ((typeof string) == "object") { return Object.keys(string).length == 0 ? true : false; }
 	else if ((typeof string) == "boolean") return false;
 	else if ((typeof string) == "number") return false;
 	else if (Array.isArray(string)) { string.length == 0 ? true : false; }

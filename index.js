@@ -367,7 +367,8 @@ function generateCryptoAddressUrl(network, address, amount=null, contractaddress
 		if (refid) {
 			addrparams['refid'] = refid;
 		}
-		return url + isEmptyOrNull(addrparams)?"":'?' + new URLSearchParams(addrparams).toString();
+		const sortedObject = Object.keys(addrparams).sort().reduce((sortedObj, key) => { sortedObj[key] = addrparams[key]; return sortedObj; }, {});
+		return url + (isEmptyOrNull(sortedObject)?"":'?' + new URLSearchParams(sortedObject).toString());
 	}
 }
 
